@@ -10,7 +10,7 @@ export const CTASection: React.FC<CTASectionProps> = ({ onBookNow }) => {
     <section className="py-24 relative overflow-hidden">
       {/* Background Gradient & Pattern */}
       <div className="absolute inset-0 bg-slate-900 dark:bg-black">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-900/40 via-slate-900/90 to-slate-950 dark:from-indigo-900/20 dark:via-black dark:to-black"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-amber-900/40 via-slate-900/90 to-slate-950 dark:from-indigo-900/20 dark:via-black dark:to-black"></div>
       </div>
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
@@ -31,7 +31,7 @@ export const CTASection: React.FC<CTASectionProps> = ({ onBookNow }) => {
         <div className="pt-4">
           <button 
             onClick={onBookNow}
-            className="px-10 py-5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-base shadow-xl shadow-amber-500/20 hover:scale-105 transition-all flex items-center justify-center gap-3 mx-auto cursor-pointer"
+            className="px-10 py-5 rounded-full bg-linear-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-base shadow-xl shadow-amber-500/20 hover:scale-105 transition-all flex items-center justify-center gap-3 mx-auto cursor-pointer"
           >
             <span>Consult Top Astrologer Now</span>
             <ArrowRight className="w-5 h-5" />

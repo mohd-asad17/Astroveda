@@ -32,7 +32,7 @@ export const Testimonials: React.FC = () => {
         
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Voices of <span className="bg-gradient-to-r from-amber-500 to-amber-700 dark:from-amber-200 dark:to-amber-400 bg-clip-text text-transparent">Clarity</span>
+            Voices of <span className="bg-linear-to-r from-amber-500 to-amber-700 dark:from-amber-200 dark:to-amber-400 bg-clip-text text-transparent">Clarity</span>
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base font-light">
             Hear from thousands of seekers who have transformed their lives through our cosmic guidance.

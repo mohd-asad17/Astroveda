@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Astrologer } from '../types';
-import { X, Star, ShieldCheck, Award, GraduationCap, MapPin, MessageSquare, PhoneCall, Video, Calendar, Clock, CheckCircle2, ThumbsUp } from 'lucide-react';
+import { X, Star, ShieldCheck, Award, GraduationCap, MapPin, MessageSquare, PhoneCall, Video, CheckCircle2 } from 'lucide-react';
 
 interface AstrologerProfileModalProps {
   astrologer: Astrologer | null;
@@ -52,7 +52,7 @@ export const AstrologerProfileModal: React.FC<AstrologerProfileModalProps> = ({
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 p-2.5 rounded-full bg-slate-100 dark:bg-black/40 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:text-white transition-colors cursor-pointer"
+          className="absolute top-4 right-4 z-20 p-2.5 rounded-full bg-slate-100 dark:bg-black/40 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:text-slate-900 transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -67,7 +67,7 @@ export const AstrologerProfileModal: React.FC<AstrologerProfileModalProps> = ({
             alt="Astrologer Banner"
             className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#020208] via-[#020208]/60 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-[#020208] via-[#020208]/60 to-transparent" />
 
           {/* Avatar & Key Info Badge */}
           <div className="absolute -bottom-6 left-6 sm:left-8 flex items-end gap-4">
@@ -97,7 +97,7 @@ export const AstrologerProfileModal: React.FC<AstrologerProfileModalProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">{astrologer.name}</h2>
-                <ShieldCheck className="w-5 h-5 text-amber-500" title="Verified Acharya" />
+                <ShieldCheck className="w-5 h-5 text-amber-500" aria-label="Verified Acharya" />
               </div>
               <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 mt-0.5">{astrologer.title}</p>
               
@@ -287,7 +287,7 @@ export const AstrologerProfileModal: React.FC<AstrologerProfileModalProps> = ({
                     className={`p-3.5 rounded-xl border text-center transition-all cursor-pointer ${
                       selectedMode === 'chat'
                         ? 'bg-amber-500/10 border-amber-500 text-amber-500'
-                        : 'bg-slate-200/60 dark:bg-white/5 border-slate-300 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:text-white'
+                        : 'bg-slate-200/60 dark:bg-white/5 border-slate-300 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 '
                     }`}
                   >
                     <MessageSquare className="w-5 h-5 mx-auto mb-1 text-amber-500" />
@@ -300,7 +300,7 @@ export const AstrologerProfileModal: React.FC<AstrologerProfileModalProps> = ({
                     className={`p-3.5 rounded-xl border text-center transition-all cursor-pointer ${
                       selectedMode === 'call'
                         ? 'bg-amber-500/10 border-amber-500 text-amber-500'
-                        : 'bg-slate-200/60 dark:bg-white/5 border-slate-300 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:text-white'
+                        : 'bg-slate-200/60 dark:bg-white/5 border-slate-300 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 '
                     }`}
                   >
                     <PhoneCall className="w-5 h-5 mx-auto mb-1 text-amber-500" />
@@ -313,7 +313,7 @@ export const AstrologerProfileModal: React.FC<AstrologerProfileModalProps> = ({
                     className={`p-3.5 rounded-xl border text-center transition-all cursor-pointer ${
                       selectedMode === 'video'
                         ? 'bg-amber-500/10 border-amber-500 text-amber-500'
-                        : 'bg-slate-200/60 dark:bg-white/5 border-slate-300 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:text-white'
+                        : 'bg-slate-200/60 dark:bg-white/5 border-slate-300 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:text-slate-900 '
                     }`}
                   >
                     <Video className="w-5 h-5 mx-auto mb-1 text-amber-500" />

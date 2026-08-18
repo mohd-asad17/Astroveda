@@ -14,9 +14,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <div className="relative overflow-hidden bg-transparent text-slate-900 dark:text-slate-100 min-h-[85vh] flex flex-col justify-center py-12 lg:py-20 border-b border-slate-200 dark:border-white/5">
       {/* Mystical Background Glows & Stars */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-900/20 via-transparent to-transparent pointer-events-none" />
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-3xl pointer-events-none animate-pulse" />
-      <div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-indigo-900/20 via-transparent to-transparent pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-amber-500/5 rounded-full blur-3xl pointer-events-none animate-pulse" />
+      <div className="absolute top-1/3 right-10 w-100 h-100 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
 
 
 
@@ -24,13 +24,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column: Hero Text & CTAs */}
-          <div className="lg:col-span-12 max-w-4xl mx-auto text-center space-y-6 text-center lg:text-left">
+          <div className="lg:col-span-12 max-w-4xl mx-auto text-center space-y-6 lg:text-left">
             
 
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
               Unlock Your <br className="hidden sm:inline" />
-              <span className="bg-gradient-to-r from-amber-200 via-amber-400 to-yellow-300 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-amber-200 via-amber-400 to-yellow-300 bg-clip-text text-transparent">
                 Cosmic Destiny
               </span>{' '}
               with Certified Masters

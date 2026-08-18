@@ -52,7 +52,7 @@ export const AstrologerCard: React.FC<AstrologerCardProps> = ({
               >
                 {astrologer.name}
               </h3>
-              <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" title="Verified Acharya" />
+              <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" aria-label="Verified Acharya" />
             </div>
 
             <p className="text-xs text-slate-600 dark:text-slate-400 line-clamp-1 mb-2 font-light">
@@ -122,7 +122,7 @@ export const AstrologerCard: React.FC<AstrologerCardProps> = ({
         <div className="grid grid-cols-3 gap-2">
           <button
             onClick={() => onBookDirect(astrologer, 'chat')}
-            className="flex flex-col items-center justify-center gap-1 py-2 rounded-xl bg-slate-200/60 dark:bg-white/5 hover:bg-white/10 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:text-white transition-all cursor-pointer"
+            className="flex flex-col items-center justify-center gap-1 py-2 rounded-xl bg-slate-200/60 dark:bg-white/5 hover:bg-white/10 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:text-slate-900  transition-all cursor-pointer"
             title="Start Chat"
           >
             <MessageSquare className="w-4 h-4 text-amber-500" />
@@ -131,7 +131,7 @@ export const AstrologerCard: React.FC<AstrologerCardProps> = ({
 
           <button
             onClick={() => onBookDirect(astrologer, 'call')}
-            className="flex flex-col items-center justify-center gap-1 py-2 rounded-xl bg-slate-200/60 dark:bg-white/5 hover:bg-white/10 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:text-white transition-all cursor-pointer"
+            className="flex flex-col items-center justify-center gap-1 py-2 rounded-xl bg-slate-200/60 dark:bg-white/5 hover:bg-white/10 border border-slate-300 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:text-slate-900 transition-all cursor-pointer"
             title="Start Call"
           >
             <PhoneCall className="w-4 h-4 text-amber-500" />

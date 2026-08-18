@@ -37,7 +37,7 @@ export const WhyChooseUs: React.FC = () => {
             </div>
             
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">
-              A Platform Built on <span className="bg-gradient-to-r from-amber-500 to-amber-700 dark:from-amber-300 dark:to-amber-500 bg-clip-text text-transparent">Trust & Authenticity</span>
+              A Platform Built on <span className="bg-linear-to-r from-amber-500 to-amber-700 dark:from-amber-300 dark:to-amber-500 bg-clip-text text-transparent">Trust & Authenticity</span>
             </h2>
             
             <p className="text-slate-600 dark:text-slate-400 font-light leading-relaxed">

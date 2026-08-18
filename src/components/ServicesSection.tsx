@@ -27,7 +27,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             <span>Premium Consultations</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Our <span className="bg-gradient-to-r from-amber-500 to-amber-700 dark:from-amber-200 dark:to-amber-400 bg-clip-text text-transparent">Vedic Services</span>
+            Our <span className="bg-linear-to-r from-amber-500 to-amber-700 dark:from-amber-200 dark:to-amber-400 bg-clip-text text-transparent">Vedic Services</span>
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base font-light">
             Explore our comprehensive range of spiritual and astrological services designed to bring clarity and harmony to your life.

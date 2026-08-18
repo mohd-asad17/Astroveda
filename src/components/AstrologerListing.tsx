@@ -75,7 +75,7 @@ export const AstrologerListing: React.FC<AstrologerListingProps> = ({
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Consult India's Top <span className="bg-gradient-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent">Astrologers</span>
+            Consult India's Top <span className="bg-linear-to-r from-amber-200 to-amber-400 bg-clip-text text-transparent">Astrologers</span>
           </h2>
 
           <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light">

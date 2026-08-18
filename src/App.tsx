@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AstrologerListing } from './components/AstrologerListing';
@@ -17,7 +17,6 @@ import { Astrologer } from './types';
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>('home');
   
-  // Modals & Selections
   const [selectedAstrologerForProfile, setSelectedAstrologerForProfile] = useState<Astrologer | null>(null);
   const [selectedAstrologerForBooking, setSelectedAstrologerForBooking] = useState<Astrologer | null>(null);
   const [bookingMode, setBookingMode] = useState<'chat' | 'call' | 'video'>('video');
@@ -25,7 +24,6 @@ export default function App() {
   const [bookingSlotTime, setBookingSlotTime] = useState<string | undefined>(undefined);
 
 
-  // Handlers
   const handleOpenDirectBooking = (astrologer: Astrologer, mode: 'chat' | 'call' | 'video') => {
     setSelectedAstrologerForBooking(astrologer);
     setBookingMode(mode);
@@ -42,8 +40,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#020208] text-slate-700 dark:text-slate-300 flex flex-col font-sans selection:bg-amber-500 selection:text-black">
-      
-      {/* Universal Sticky Celestial Header */}
+  
       <Navbar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
@@ -53,17 +50,14 @@ export default function App() {
         }}
       />
 
-      {/* Main Page Views */}
       <main className="flex-1">
-        
-        {/* VIEW 1: HOME PAGE */}
+
         {activeTab === 'home' && (
           <>
             <HeroSection
               onExploreAstrologers={() => setActiveTab('astrologers')}
             />
 
-            {/* Featured Top Astrologers Row */}
             <section className="py-12 bg-slate-200/50 dark:bg-black/20">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between mb-8">
@@ -76,7 +70,7 @@ export default function App() {
                     onClick={() => setActiveTab('astrologers')}
                     className="text-xs font-medium text-amber-500 hover:underline cursor-pointer"
                   >
-                    View All 500+ Masters →
+                    View All →
                   </button>
                 </div>
 
@@ -103,7 +97,6 @@ export default function App() {
           </>
         )}
 
-        {/* VIEW 2: ASTROLOGER LISTING DIRECTORY */}
         {activeTab === 'astrologers' && (
           <AstrologerListing
             astrologers={ASTROLOGERS_DATA}
@@ -112,7 +105,6 @@ export default function App() {
           />
         )}
 
-        {/* VIEW 3: SERVICES */}
         {activeTab === 'services' && (
           <ServicesSection onSelectService={(id) => {
             setActiveTab('astrologers');
@@ -121,10 +113,8 @@ export default function App() {
 
       </main>
 
-      {/* Footer */}
       <Footer setActiveTab={setActiveTab} />
 
-      {/* Astrologer Deep Profile Modal */}
       {selectedAstrologerForProfile && (
         <AstrologerProfileModal
           astrologer={selectedAstrologerForProfile}
@@ -133,7 +123,6 @@ export default function App() {
         />
       )}
 
-      {/* Booking Checkout Modal */}
       {selectedAstrologerForBooking && (
         <BookingModal
           astrologer={selectedAstrologerForBooking}
